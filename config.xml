@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Hello World</name>
+<widget id="com.45graphics.cellphoneplanet" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Cell phone planet</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Cell phone planet buy and sell your phone.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="josue@45graphics.net" href="josue45.com">
+      josue45.com
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
