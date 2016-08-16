@@ -31,7 +31,7 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <icon src="icon.png" />
 	
-	<preference name="splash-screen-duration" 		value="3000" />
+	<preference name="splash-screen-duration" 		value="4000" />
 	<gap:splash src="xhdpi.png" /> 
    
   
