@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' https://www.youtube.com"/>-->
 <title>Master App</title>
 <link href="http://m.josue45.com/mobile/mobileTest/css.css" rel="stylesheet" type="text/css">
 <link href="http://m.josue45.com/jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
@@ -29,7 +28,7 @@ if(localStorage.getItem("userId") != null && localStorage.getItem("userId") != "
 function thePath(){ //this will return the path of current user
 		return id;
 			}		
-		//alert(thePath());
+		alert(thePath());
 		//alert(this.id);
 
 //id here for app
@@ -583,7 +582,6 @@ function setFooter(company){
 </div>
 
 <script type="text/javascript" src="cordova.js"></script>
-
 <script type="text/javascript" language="javascript" src="http://m.josue45.com/mobile/mobileTest/camera.js"></script>
  <script type="text/javascript">
 			app.initialize();
