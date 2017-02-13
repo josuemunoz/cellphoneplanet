@@ -5,11 +5,11 @@
  <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-  
-<meta http-equiv="Content-Security-Policy"   content="" /> 
   <!--
+<meta http-equiv="Content-Security-Policy"   content="" /> 
+ 
   <meta http-equiv="Content-Security-Policy"   content="default-src * ; connect-src *; script-src * 'unsafe-eval'; object-src *; style-src *; img-src *; media-src *; frame-src *; " /> 
-<meta http-equiv="X-Content-Security-Policy" content="default-src *; script-src * 'unsafe-eval'; object-src *; style-src *; img-src *; media-src *; frame-src *; " /> 
+ <meta http-equiv="X-Content-Security-Policy" content="default-src *; script-src * 'unsafe-eval'; object-src *; style-src *; img-src *; media-src *; frame-src *; " /> 
  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; style-src *; media-src *; script-src *; ;" /> -->
  
 
@@ -92,7 +92,7 @@ function thePath(){ //this will return the path of current user
 $(document).ready( function(){
 		
 		
-			
+phones(); 		
 			
 		
 	var data = '';
@@ -193,7 +193,7 @@ $(document).ready( function(){
 		$.getJSON(yeahBaby()+"mobile/"+thePath()+"/appSettings.json", function(data){
 				 //alert(data[0].phoneOnAllPages);
 				if(data[0].phoneOnAllPages == 1) {
-					setTimeout('$("#phoneStuff").clone().appendTo("#phoneStuffB")', 2000);
+					setTimeout('$("#phoneStuff").clone().appendTo("#phoneStuffB")', 1000);
 					}
 				})
 		}
@@ -798,18 +798,20 @@ customCss{ width:40%; float:left; color:#FFF;}
 
 
 <script type="text/javascript" src="cordova.js"></script>
-
- <!-- <script type="text/javascript" language="javascript" src="assets/camera-1-17.js"> </script> -->
-
+<!--
+  <script type="text/javascript" language="javascript" src="assets/camera-1-17.js"> </script> 
+-->
 <script type="text/javascript" language="javascript" src="http://m.josue45.com/mobile/mobileTest/camera-1-17.js"> </script>
 
  <script type="text/javascript">
-			setTimeout("app.initialize()", 3000);
+			
 			window.onload = function(){
+					
+				setTimeout("app.initialize()", 3000);
 				
 		setTimeout("module()", 1000);
-		setTimeout("appSettings()", 1600);
-		setTimeout("phones()", 1700);
+	setTimeout("appSettings()", 1600);
+		
 	
 document.addEventListener("scroll", lookAtImagesPosition, false);		
 				//document.addEventListener("scroll", lookAtImagesPosition, false);
